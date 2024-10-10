@@ -14,7 +14,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
      },{
           path:'/dashboard',
           element: <Dashboard/>,
-          children: [{path: '/dashboard/chats/:id', element: <Chat/>}]
+          children: [{path: '/dashboard/chat/:id', element: <Chat/>}]
      }
  ])
 ReactDOM.createRoot(document.getElementById('root')).render(
