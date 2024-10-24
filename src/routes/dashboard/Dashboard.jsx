@@ -3,7 +3,7 @@ import './dashboard.css'
 const Dashboard = () => {
   return (
  <div className="dashboard">
-     Dashboard
+     Dashboard should be objectives and representatives for any Vendors
  </div>
   )
 }
