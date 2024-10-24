@@ -7,13 +7,23 @@ import Chat from './routes/chat/Chat'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import RootLayout from './layouts/RootLayout'
 import DashboardLayout from './layouts/dashboardLayout/DashboardLayout'
- const router = createBrowserRouter([
+import { SignIn, SignUp } from '@clerk/clerk-react'
+
+
+
+const router = createBrowserRouter([
      {
          
           element: <RootLayout/>,
          children:[
           {
                path:"/", element:<Home/>
+          },
+          {
+               path:"/sign-in/*", element:<SignIn/>
+          },
+          {
+               path:"/sign-up/*", element:<SignUp/>
           },
           {
                element: <DashboardLayout/>,
